@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! 🎉</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #ff9a8b, #fad0c4); /* Soft pastel pink */
+            color: #2c3e50; /* Deep gray-blue for better readability */
+            padding: 10px;
+        }
+        .container {
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 600px;
+            background: #fff;
+            border-radius: 15px; /* Rounded corners for a softer feel */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #e74c3c; /* Bold red for excitement */
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.2em;
+            color: #34495e; /* Darker gray-blue for a calmer text color */
+        }
+        .quote {
+            font-size: 1.1em;
+            margin: 15px 0;
+            font-style: italic;
+            color: #f39c12; /* Warm yellow-orange for the quotes */
+        }
+        .button {
+            background: #f39c12;
+            color: #fff;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #e67e22; /* Darker orange when hovered */
+        }
+        #about-you {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: #2c3e50;
+            background: #ecf0f1; /* Light gray background for the section */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        #about-you p {
+            text-align: left;
+            margin: 10px 0;
+        }
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+                max-width: 100%;
+            }
+            h1 {
+                font-size: 2.2em;
+            }
+            p, .quote, .button, #about-you p {
+                font-size: 1em;
+            }
+            .button {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday! 🎉</h1>
+        <p>Wishing you a day filled with love, joy, and all your favorite things. May your year ahead be as wonderful as you are. 🥳</p>
+        <div class="quote">"Count your life by smiles, not tears. Count your age by friends, not years." ✨</div>
+        <div class="quote">"On this day, a queen was born. 👑 Happy birthday to the most special person in my life."</div>
+        <button class="button" onclick="showAbout()">About You 💖</button>
+        <div id="about-you">
+            <p>1. <strong>Straightforward and Honest:</strong> You are clear about what you want and communicate directly without ambiguity. You don't like your needs or desires being ignored.</p>
+            <p>2. <strong>Emotionally Driven but Resolute:</strong> If you feel hurt or upset, you expect the other person to address the issue instead of leaving it unresolved. You value resolution before moving forward.</p>
+            <p>3. <strong>Impatient and Non-Conforming:</strong> You admit to being lazy and dislike overthinking. You prefer to act based on your instincts and immediate feelings rather than overanalyzing situations.</p>
+            <p>4. <strong>Values Freedom:</strong> You do not like being restricted or controlled. You want the freedom to interact with people as you see fit and expect your choices to be respected.</p>
+            <p>5. <strong>Self-Aware and Accepting:</strong> You acknowledge your flaws and expect others to accept you as you are, without judgment or demands for change.</p>
+            <p>6. <strong>Thoughtful in Decision-Making:</strong> While you act based on your feelings, you also consider situations carefully before taking decisions or asking for something.</p>
+            <p>Happy Birthday! 🎂🎉</p>
+        </div>
+        <a href="main.html" class="button">Surprise Inside! 🎁</a>
+    </div>
+    <script>
+        function showAbout() {
+            var aboutSection = document.getElementById('about-you');
+            if (aboutSection.style.display === 'block') {
+                aboutSection.style.display = 'none';
+            } else {
+                aboutSection.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
